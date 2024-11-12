@@ -1,9 +1,19 @@
+@import "../abstract/mixins.sass"
+
 .header
     display: flex
     flex-direction: row
     height: 9.2rem
     align-items: center
-    margin: 0 315px
+    margin: 0 30rem
+
+    @include for-phone-only
+        margin: 0 5rem
+    @include for-tablet
+        margin: 0 20rem
+    @include for-desktop
+        margin: 0 25rem
+
     &__search
         margin-left: 2.3rem
     &__comparison
