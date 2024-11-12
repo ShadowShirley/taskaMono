@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+header__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header__number {
+  padding-bottom: 6px;
+}

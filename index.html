@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+  </head>
+  <body class="symetry">
+    <section class="">
+      <div class="line"></div>
+      <div class="header main__layout">
+          <button>
+              <img src="/svg/Меню.svg" alt="меню">
+          </button>
+          <span class="header__link">
+            <span class="header__link_first">Упаковка</span>
+            <span class="header__link_middle">Оборудование</span>
+            <span class="header__link_last">Сервис и запчасти</span>
+          </span>
+
+          <button class="main__logo">
+              <img src="/svg/Frame.svg" alt="Моневак">
+          </button>
+
+
+          <button class="header__comparison"><img src="/svg/Сравение.svg" alt=""></button>
+          <button class="header__search"><img src="/svg/Поиск.svg" alt=""></button>
+          <div class="header__info">
+              <p class="header__number">+7 (499) 136-17-18</p>
+              <a class="header__mail">info@monevac.ru</a>
+          </div>
+          <a class="btn btn_typ">Оставить заявку</a>
+      </div>
+      <article class="underHeader">
+        <div class="underHeader__link">
+            <div>
+                <a href="#" class="underHeader__link_first">Главная</a>
+                <span>•</span>
+                <a href="#" class="underHeader__link_second">Контакты</a>
+            </div>
+        </div>
+        <div class="underHeader__main"><h1>Контакты</h1></div>
+      </article>
+      <section class="main main__layout">
+        <section class="main__contact">
+          <div class="info">
+              <h2 class="info__number_style">8 (903) 467 98 51</h2>
+              <div class="info__mail"><a href="" class="info__mail_style">info@monevac.ru</a></div>
+              <div class="info__name info__name_style">
+                  <p>Полное наименование:</p>
+                  <p>Общество с ограниченной ответственностью «МОНЕВАК»</p>
+                  <p>Сокращенное наименование: ООО «МОНЕВАК»</p>
+              </div>
+              <div class="info__description info__description_style">
+                  <p class="description__place">
+                      ИНН: 3448050610</br>
+                      КПП: 344801001</br>
+                      ОКПО: 67354285</br>
+                      ОКАТО: 18401000000</br>
+                      ОГРН: 1103461002480</br>
+                      Код по ОКВЭД: 51.70</br>
+                  </p>
+                  <p class="description__place">
+                      Банк: Филиала «Ростовский» ОАО «Альфа-Банк» г Ростов на Дону</br>
+                      БИК: 046015207</br>
+                      к/с: 30101810500000000207</br>
+                      р/с: 40702810926090000003</br>
+                  </p>
+                  <p>
+                  Юридический адрес: 400080,</br>
+                      Волгоградская обл. г. Волгоград ул.</br>
+                      Командира Рудь,14А, офис 13</br>
+                      Почтовый адрес: 400080,</br>
+                      Волгоградская обл.</br>
+                      г. Волгоград ул. Командира Рудь, 14А, офис 13</br>
+                  </p>
+              </div>
+          </div>
+          <div class="form">
+              <h2 form__title>Остались вопросы?</h2>
+              <form action="" class="form__main" method="post">
+                  <div class="form__main_top">
+                      <input type="text"
+                             name="name"
+                             required
+                             placeholder="Ваше имя"
+                             minlength="2"
+                             maxlength="25"
+                             class="form__main_top_name">
+                      <input type="tel"
+                             name="number"
+                             required
+                             placeholder="Ваш телефон"
+                             pattern=".{11,}"
+                             title="Минимум 11 символов"
+                             minlength="11"
+                             maxlength="12"
+                             class="form__main_top_number">
+                  </div>
+                  <div class="form__main_bottom">
+                      <textarea
+                             id="message"
+                             name="message"
+                             placeholder="Ваше сообщение"
+                             class="form__main_bottom_message"
+                             maxlength="200"
+                             spellcheck="true"
+                      ></textarea>
+                  </div>
+                  <div class="form__main_checkbox">
+                      <input type="checkbox" required >
+                      <label class="form__main_checkbox_label">Я подтверждаю свое согласие
+                      с политикой в отношении
+                          <a href="" class="form__main_checkbox_label_link">
+                              обработки персональных данных
+                          </a>
+                      </label>
+                  </div>
+              </form>
+              <input type="submit" value="Задать вопрос" required class=""/>
+          </div>
+        </section>
+        <section class="main__map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab5be87732e30d60dcf7659d9738dea48706ef37328f3ca7735a57956df2cf975&amp;source=constructor"
+                    width="100%" height="600" frameborder="0"></iframe>
+        </section>
+        <section class="main__cards">
+            <div class="container">
+                <div class="container__card" id="first">
+                    <h4 class="container__card_title">МОСКВА</h4>
+                    <p class="container__card_number">+7 (499) 136-17-18</p>
+                    <p class="container__card_number">+7 (903) 467-98-51</p>
+                    <p class="container__card_state">115114, ул. Дербеневская, д. 1, стр. 1, </br>
+                        подъезд 44, офис 6 (станция метро </br> "Павелецкая")</p>
+                    <a class="container__card_button">Проложить маршрут</a>
+                    <p class="container__card_time">Режим работы: c 10:00 до 18:00</p>
+                </div>
+                <div class="container__card" id="second">
+                    <h4 class="container__card_title">Волгоград</h4>
+                    <p class="container__card_number">+7 (8442) 65-08-88</p>
+                    <p class="container__card_number">+7 (8442) 65-08-80</p>
+                    <p class="container__card_state">400080, ул. Командира Рудь, 14А</p>
+                    <a class="container__card_button">Проложить маршрут</a>
+                    <p class="container__card_time">Режим работы: c 8:00 до 17:00</p>
+                </div>
+                <div class="container__card" id="third">
+                    <h4 class="container__card_title">Краснодар</h4>
+                    <p class="container__card_number"> +7 (861) 292-71-88</p>
+                    <p class="container__card_number">+7 (903) 467-98-51</p>
+                    <p class="container__card_state">350015, ул. Митрофана Седина, 176</p>
+                    <a class="container__card_button">Проложить маршрут</a>
+                    <p class="container__card_time">Режим работы: c 8:00 до 17:00</p>
+                </div>
+                <div class="container__card" id="fourth">
+                    <h4 class="container__card_title">Саратов</h4>
+                    <p class="container__card_number">+7 (927) 626-00-50</p>
+                    <p class="container__card_number">+7 (903) 467-98-51</p>
+                    <p class="container__card_state">410080, пр-т Строителей, 1</p>
+                    <a class="container__card_button">Проложить маршрут</a>
+                    <p class="container__card_time">Режим работы: c 10:00 до 18:00</p>
+                </div>
+
+                <div class="container__card" id="fifth">
+                    <h4 class="container__card_title">Воронеж</h4>
+                    <p class="container__card_number">+7 (473) 229-63-78</p>
+                    <p class="container__card_number">+7 (903) 467-98-51</p>
+                    <p class="container__card_state">394030, ул. Комиссаржевской, 10</p>
+                    <a class="container__card_button">Проложить маршрут</a>
+                    <p class="container__card_time">Режим работы: c 10:00 до 18:00</p>
+                </div>
+
+                <div class="container__card" id="sixth">
+                    <h4 class="container__card_title">Ереван</h4>
+                    <p class="container__card_number">+374 91 21 90 69</p>
+                    <p class="container__card_number">+374 60 50 90 69</p>
+                    <p class="container__card_state">Район Аван 4, дом 2</p>
+                    <a class="container__card_button">Проложить маршрут</a>
+                    <p class="container__card_time">Режим работы: c 10:00 до 18:00</p>
+                </div>
+
+                <div class="container__card" id="last">
+                    <h4 class="container__card_title">Новосибирск</h4>
+                    <p class="container__card_number">+7 (383) 20-62-461;
+                        +7 (383) 20-62-711;
+                        +7 (903) 467-98-51 </p>
+                    <p class="container__card_number">Факс: +7 (383) 20-62-209;  +7 (383) 20-62-210</p>
+                    <p class="container__card_state">630039, ул. Никитина 116, к.3</p>
+                    <a class="container__card_button">Проложить маршрут</a>
+                    <p class="container__card_time">Режим работы: c 10:00 до 18:00</p>
+                </div>
+            </div>
+        </section>
+      </section>
+      <section class="footer">
+          <section class="footer__top">
+              <article class="footer__top_left">
+                  <div class="left_indentation">
+                      <div class="text_big footer__top_left_link">
+                          <a>Упаковочное оборудование</a>
+                          <a>Пленки</a>
+                          <a>Пакеты</a>
+                          <a>Прочие материалы</a>
+                      </div>
+                      <div class="footer__top_left_grid">
+                          <div class="footer__top_left_grid_first">
+                              <a class="footer__top_left_grid_link" href="#">О Компании</a>
+                              <a class="footer__top_left_grid_link" href="#">Партнеры</a>
+                              <a class="footer__top_left_grid_link" href="#">Доставка</a>
+                              <a class="footer__top_left_grid_link" href="#">Оплата</a>
+                              <a class="footer__top_left_grid_link" href="#">Обмен и возврат</a>
+                          </div>
+                          <div class="footer__top_left_grid_second">
+                              <a class="footer__top_left_grid_link" href="#">Контакты</a>
+                              <a class="footer__top_left_grid_link" href="#">Распродажа</a>
+                              <a class="footer__top_left_grid_link" href="#">Сервис</a>
+                              <a class="footer__top_left_grid_link" href="#">Новости</a>
+                          </div>
+                      </div>
+                  </div>
+              </article>
+              <article class="footer__top_right">
+                  <div class="right_indentation">
+                      <div class="footer__top_right_info">
+                          <div class="footer__top_right_info_number">
+                              <h3>+7 (499) 136-17-18</h3>
+                              <h3>+7 (903) 467-98-51 </h3>
+                          </div>
+                          <button class="footer__top_right_info_button btn__footer">
+                              Обратный звонок
+                          </button>
+                      </div>
+                      <a class="text_big footer__top_right_mail">info@monevac.ru</a>
+                      <p class="text_big footer__top_right_street">Москва ул. Дербеневская, д. 1, стр. 1,
+                          подъезд 44, офис 6</br> (станция метро "Павелецкая")
+                      </p>
+                  </div>
+              </article>
+          </section>
+          <section class="footer__bottom">
+              <article class="footer__bottom_left ">
+                  <p class="left_indentation footer__bottom_left_info">© Моневак 2020 | Все права защищены</p>
+              </article>
+              <article class="footer__bottom_right">
+                  <p class="right_indentation footer__bottom_right_info">Разработка и продвижение сайта - <a href="#" class="footer__link">TODO</a></p>
+              </article>
+          </section>
+      </section>
+    </section>
+
+  </body>
+</html>

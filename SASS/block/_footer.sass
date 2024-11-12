@@ -1,0 +1,71 @@
+.footer
+    &__top
+        display: flex
+        height: 39.9rem
+        &_left
+            display: block
+            width: 50%
+            background-color: $color-footer-left
+            &_link
+                display: flex
+                flex-direction: column
+                padding-top: 6.3rem
+                padding-bottom: 6.9rem
+                width: max-content
+                gap: 1rem
+            &_grid
+                display: flex
+                flex-direction: column
+                padding-bottom: 4.3rem
+
+                &_first
+                    display: flex
+                    gap: 1.8rem
+                    flex-direction: row
+                &_second
+                    display: flex
+                    gap: 1.8rem
+                    flex-direction: row
+        &_right
+            display: block
+            width: 50%
+            background-color: $color-footer-right
+            &_info
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                padding-top: 6.3rem
+                padding-bottom: 2rem
+                &_number
+                    display: flex
+                    flex-direction: column
+                    gap: 1rem
+            &_mail
+                color: $color-red-links
+            &_street
+                padding-top: 9.7rem
+
+    &__bottom
+        height: 6.8rem
+        display: flex
+        border-top: rgba(0, 0, 0, 0.8) solid 0.2rem
+        &_left
+            display: block
+            flex: 1 1 0%
+            background-color: $color-footer-left
+            &_info
+                padding-top: 2.3rem
+        &_right
+            display: block
+            flex: 1 1 0%
+            background-color: $color-footer-right
+            &_info
+                padding-top: 2.3rem
+
+
+.left_indentation
+    margin-left: 31.5rem
+
+.right_indentation
+    margin-right: 31.5rem
+    margin-left: 12.7rem
