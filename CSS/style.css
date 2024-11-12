@@ -62,14 +62,6 @@ a {
   position: relative;
 }
 
-.line {
-  position: absolute;
-  right: 958px;
-  border: rgba(211, 15, 214, 0.3) solid;
-  height: 2600px;
-  width: 1px;
-}
-
 body {
   font-family: "RoadRadio", sans-serif;
   font-weight: 400;
@@ -458,14 +450,6 @@ a {
   position: relative;
 }
 
-.line {
-  position: absolute;
-  right: 958px;
-  border: rgba(211, 15, 214, 0.3) solid;
-  height: 2600px;
-  width: 1px;
-}
-
 .btn {
   padding: 1.9rem 2.8rem;
   background: #BF2738;
@@ -648,6 +632,14 @@ input[type=submit]:hover {
 
 .form__main_checkbox_label {
   margin-left: 1.6rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
 }
 
 .container {
