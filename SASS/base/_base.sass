@@ -23,6 +23,7 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+    content: none
 
 button
     padding: 0
@@ -46,13 +47,26 @@ a
     background-color: transparent
     cursor: pointer
 
-.symetry
+label input
+    display: none
+
+label span
+    height: 2rem
+    width: 2rem
+    display: inline-block
     position: relative
+    background-color: $color-back-block
+    border-radius: 0.4rem
 
-
-//.line
-//    position: absolute
-//    right: 958px
-//    border: rgba(211, 15, 214, 0.3) solid
-//    height: 2600px
-//    width: 1px
+[type=checkbox]:checked + span:before
+    content: '\2714'
+    position: absolute
+    font-size: 2rem
+    height: 2rem
+    width: 2rem
+    padding: 2px 0 0 2px
+    color: white
+    border-radius: 0.4rem
+    background-color: $color-red
+label span:hover
+    background-color: $color-red

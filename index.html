@@ -1,28 +1,35 @@
 <!doctype html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
+    <script type="module" src="main.js" defer></script>
     <link rel="stylesheet" href="/CSS/style.css">
+
   </head>
-  <body class="symetry">
-    <section class="">
-      <div class="line"></div>
-      <div class="header main__layout">
-          <button>
+  <body>
+    <section>
+      <div class="header">
+          <button class="header__menu">
               <img src="/svg/Меню.svg" alt="меню">
           </button>
           <span class="header__link">
-            <span class="header__link_first">Упаковка</span>
-            <span class="header__link_middle">Оборудование</span>
-            <span class="header__link_last">Сервис и запчасти</span>
+            <a class="header__link_first">Упаковка</a>
+            <a class="header__link_middle">Оборудование</a>
+            <a class="header__link_last">Сервис и запчасти</a>
           </span>
 
           <button class="main__logo">
               <img src="/svg/Frame.svg" alt="Моневак">
           </button>
-
+          <button class="main__logo_mobile">
+              <img src="/svg/Frame.svg" alt="Моневак" width="67" height="40">
+          </button>
+          <button class="dop__logo">
+              <img src="/svg/ЛогоПланшеты.svg" alt="Моневак">
+          </button>
 
           <button class="header__comparison"><img src="/svg/Сравение.svg" alt=""></button>
           <button class="header__search"><img src="/svg/Поиск.svg" alt=""></button>
@@ -40,7 +47,7 @@
                 <a href="#" class="underHeader__link_second">Контакты</a>
             </div>
         </div>
-        <div class="underHeader__main"><h1>Контакты</h1></div>
+        <div class="underHeader__main"><h1 class="underHeader__main_style">Контакты</h1></div>
       </article>
       <section class="main main__layout">
         <section class="main__contact">
@@ -48,9 +55,9 @@
               <h2 class="info__number_style">8 (903) 467 98 51</h2>
               <div class="info__mail"><a href="" class="info__mail_style">info@monevac.ru</a></div>
               <div class="info__name info__name_style">
-                  <p>Полное наименование:</p>
-                  <p>Общество с ограниченной ответственностью «МОНЕВАК»</p>
-                  <p>Сокращенное наименование: ООО «МОНЕВАК»</p>
+                  <p class="info__name_main">Полное наименование:</p>
+                  <p class="info__name_main">Общество с ограниченной ответственностью «МОНЕВАК»</p>
+                  <p class="info__name_main">Сокращенное наименование: ООО «МОНЕВАК»</p>
               </div>
               <div class="info__description info__description_style">
                   <p class="description__place">
@@ -78,7 +85,7 @@
               </div>
           </div>
           <div class="form">
-              <h2 form__title>Остались вопросы?</h2>
+              <h2 class="form__title">Остались вопросы?</h2>
               <form action="" class="form__main" method="post">
                   <div class="form__main_top">
                       <input type="text"
@@ -109,21 +116,23 @@
                       ></textarea>
                   </div>
                   <div class="form__main_checkbox">
+                      <label class="form__main_checkbox_label">
                       <input type="checkbox" required >
-                      <label class="form__main_checkbox_label">Я подтверждаю свое согласие
-                      с политикой в отношении
+                      <span></span>
+                          Я подтверждаю свое согласие
+                          с политикой в отношении
                           <a href="" class="form__main_checkbox_label_link">
                               обработки персональных данных
                           </a>
                       </label>
                   </div>
               </form>
-              <input type="submit" value="Задать вопрос" required class=""/>
+              <button type="submit" class="btn__form">Задать вопрос</button>
           </div>
         </section>
         <section class="main__map">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab5be87732e30d60dcf7659d9738dea48706ef37328f3ca7735a57956df2cf975&amp;source=constructor"
-                    width="100%" height="600" frameborder="0"></iframe>
+                    width="100%" height="599" frameborder="0" class="main__map_setting"></iframe>
         </section>
         <section class="main__cards">
             <div class="container">
@@ -209,12 +218,13 @@
                               <a class="footer__top_left_grid_link" href="#">Доставка</a>
                               <a class="footer__top_left_grid_link" href="#">Оплата</a>
                               <a class="footer__top_left_grid_link" href="#">Обмен и возврат</a>
+                              <a class="footer__top_left_grid_link" href="#" id="tablet_show">Контакты</a>
                           </div>
                           <div class="footer__top_left_grid_second">
-                              <a class="footer__top_left_grid_link" href="#">Контакты</a>
+                              <a class="footer__top_left_grid_link" href="#" id="tablet_hid">Контакты</a>
                               <a class="footer__top_left_grid_link" href="#">Распродажа</a>
                               <a class="footer__top_left_grid_link" href="#">Сервис</a>
-                              <a class="footer__top_left_grid_link" href="#">Новости</a>
+                              <a class="footer__top_left_grid_link" href="#" >Новости</a>
                           </div>
                       </div>
                   </div>
@@ -239,10 +249,15 @@
           </section>
           <section class="footer__bottom">
               <article class="footer__bottom_left ">
-                  <p class="left_indentation footer__bottom_left_info">© Моневак 2020 | Все права защищены</p>
+                  <p class="left_indentation footer__bottom_left_info">
+                      © Моневак 2020 | Все права защищены</p>
               </article>
               <article class="footer__bottom_right">
-                  <p class="right_indentation footer__bottom_right_info">Разработка и продвижение сайта - <a href="#" class="footer__link">TODO</a></p>
+                  <p class="right_indentation footer__bottom_right_info_mob">© Моневак 2020 | Все права защищены</p>
+                  <p class="right_indentation footer__bottom_right_info">
+                      Разработка и продвижение сайта -
+                      <a href="#" class="footer__link">TODO</a>
+                  </p>
               </article>
           </section>
       </section>

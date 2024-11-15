@@ -1,6 +1,15 @@
+@import "../abstract/mixins.sass"
+@import "../base/typography"
+
 .underHeader
     background-color: $color-back-block
     margin-bottom: 6.2rem
+    @include for-tablet
+        margin-bottom: 4rem
+    @include for-phone-only
+        margin-bottom: 3rem
+    @include for-desktop
+        margin-bottom: 6.2rem
     &__link
         height: 6rem
         display: flex
@@ -11,9 +20,21 @@
             margin-right: 0.85rem
         &_second
             margin-left: 0.85rem
+        @include for-tablet
+            height: 4.8rem
+        @include for-phone-only
+            height: 4.8rem
+        @include for-desktop
+            height: 6rem
     &__main
         height: 10rem
         display: flex
         justify-content: center
         align-items: center
         border-top: rgba(0, 0, 0, 0.1) solid 1px
+        @include for-tablet
+            height: 6.2rem
+        @include for-phone-only
+            height: 6.6rem
+        @include for-desktop
+            height: 9.8rem

@@ -5,39 +5,121 @@
     flex-direction: row
     height: 9.2rem
     align-items: center
-    margin: 0 30rem
-
     @include for-phone-only
-        margin: 0 5rem
+        display: flex
+        flex-direction: row
+        margin: 0 1.6rem
+        height: 6.5rem
     @include for-tablet
-        margin: 0 20rem
+        margin: 0 2.8rem
+        height: 6.5rem
     @include for-desktop
-        margin: 0 25rem
-
+        height: 9.2rem
+    @include for-computer
+        margin: 0 31.5rem
+    &__menu
+        margin-right: auto
     &__search
         margin-left: 2.3rem
+        @include for-tablet
+            margin-left: auto
+        @include for-phone-only
+            margin-left: 1.6rem
+        @include for-desktop
+            margin-left: 2.3rem
     &__comparison
-        margin-left: 1.7rem
+        margin-left: 2.3rem
+        @include for-tablet
+            margin-left: 7.4rem
+        @include for-phone-only
+            margin-left: auto
+            display: block
+        @include for-desktop
+            margin-left: auto
+
     &__info
         display: flex
         justify-content: center
         flex-direction: column
-        margin-right: 5.9rem
         margin-left: 5.8rem
-
+        @include for-tablet
+            margin-right: 0
+            margin-left: auto
+        @include for-phone-only
+            display: none
+        @include for-desktop
+            margin-left: 5.8rem
 .header__link
     display: flex
     flex-direction: row
     justify-content: space-around
     align-items: center
+    @include for-tablet
+        margin-right: auto
     &_first
         margin-left: 5.9rem
+        @include for-phone-only
+            display: none
+        @include for-tablet
+            display: table
+            margin-right: 3rem
+            margin-left: 0
+            @include text_little
+                color: $color-text-main
+        @include for-desktop
+            display: table
+            margin-right: auto
+
     &_middle
         margin: 0 4.6rem
-
+        @include for-phone-only
+            display: none
+        @include for-tablet
+            display: table
+            margin: 0
+            @include text_little
+                color: $color-text-main
+        @include for-desktop
+            margin: 0 4.6rem
+    &_last
+        @include for-tablet
+            display: none
+        @include for-phone-only
+            display: none
+        @include for-desktop
+            display: table
+            margin-left: auto
+            @include text_little
+                color: $color-text-main
 
 .header__number
     margin-bottom: 6px
-
+    @include for-phone-only
+        display: none
+.header__mail
+    @include for-phone-only
+        display: none
 .main__logo
-    margin: 0 auto
+    margin: 0
+    @include for-phone-only
+        display: none
+    @include for-tablet
+        display: none
+    @include for-desktop
+        display: table
+    &_mobile
+        @include for-phone-only
+            display: block
+        @include for-tablet
+            display: none
+            margin: 0
+
+
+.dop__logo
+    margin: 0
+    @include for-tablet
+        display: table
+    @include for-desktop
+        display: none
+    @include for-phone-only
+        display: none

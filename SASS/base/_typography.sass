@@ -1,71 +1,122 @@
 @import "base"
-
+@import "../abstract/variable"
 body
     font-family: "RoadRadio", sans-serif
     font-weight: 400
     color: $color-text-main
     font-size: 1.6rem
-h1
+@mixin h1
     font-size: 4.6rem
     line-height: 100%
+    @content
 
-h2
+@mixin h1_tablet
+    font-size: 3.2rem
+    line-height: 100%
+
+@mixin h1_mobile
+    font-size: 2.2rem
+    line-height: 100%
+
+@mixin h2
     font-size: 3.6rem
     line-height: 110%
+    @content
 
-h3
+@mixin h2_tablet
+    font-size: 2.8rem
+    line-height: 120%
+
+@mixin h2_mobile
+    font-size: 2.2rem
+    line-height: 100%
+
+@mixin h3
     font-size: 3rem
     line-height: 130%
     font-weight: 500
-h4
+    @content
+
+@mixin h3_tablet
+    font-size: 2.6rem
+    line-height: 130%
+
+@mixin h3_mobile
+    font-size: 2rem
+    line-height: 100%
+
+@mixin h4
     font-size: 2.6rem
     line-height: 120%
+    @content
 
-h5
+@mixin h4_tablet
     font-size: 2.4rem
     line-height: 130%
 
-.text_big
+@mixin h4_mobile
+    font-size: 1.8rem
+    line-height: 110%
+
+@mixin h5
+    font-size: 2.4rem
+    line-height: 130%
+    @content
+
+@mixin h5_tablet
+    font-size: 2.2rem
+    line-height: 130%
+
+@mixin h5_mobile
+    font-size: 2rem
+    line-height: 100%
+
+
+@mixin text_big
     font-family: Golos, sans-serif
     font-weight: 400
     font-size: 2.4rem
     line-height: 3.36rem
+    @content
 
-
-.text_big_mobile
+@mixin text_big_mobile
     font-family: Golos, sans-serif
     font-weight: 400
     font-size: 1.6rem
     line-height: 2.4rem
+    @content
 
-
-.text_norm
+@mixin text_norm
     font-family: Golos, sans-serif
     font-weight: 400
     font-size: 1.6rem
     line-height: 2.4rem
     color: $color-text-main
+    @content
 
-.text_norm_mobile
+@mixin text_norm_mobile
     font-family: Golos, sans-serif
     font-weight: 400
     font-size: 1.4rem
     line-height: 1.96rem
     color: $color-text-main
+    @content
 
-.text_little
+@mixin text_little
     font-family: Golos, sans-serif
     font-weight: 400
     font-size: 1.4rem
     line-height: 1.96rem
     color: $color-text-dop
+    @content
 
-.text_little_mobile
+@mixin text_little_mobile
     font-family: Golos, sans-serif
     font-weight: 400
     font-size: 1.2rem
     line-height: 1.68rem
     color: $color-text-dop
+    @content
 
 input
     font-family: Golos, sans-serif
@@ -129,16 +180,26 @@ textarea
     &_second
         color: rgba(121, 121, 134, 0.7)
 
-.underHeader__main
+.underHeader__main_style
     font-size: 4.6rem
     line-height: 4.6rem
     font-weight: 400
-
+    @include for-tablet
+        @include h1_tablet
+    @include for-phone-only
+        @include h1_mobile
+    @include for-desktop
+        @include h1
 .info
     font-family: Golos,sans-serif
+    white-space: nowrap
     &__number_style
         font-family: RoadRadio,sans-serif
         font-weight: 400
+        @include for-tablet
+            @include h2_tablet
+        @include for-desktop
+            @include h2
     &__mail_style
         cursor: pointer
         color: $color-red
@@ -147,16 +208,29 @@ textarea
         font-weight: 400
     &__name_style
         font-family: Golos,sans-serif
-
         font-size: 1.7rem
         line-height: 110%
+        white-space: normal
+        @include for-tablet
+            @include text_norm_mobile
+        @include for-phone-only
+            @include text_norm_mobile
+        @include for-desktop
+            font-size: 1.7rem
+            line-height: 110%
     &__description_style
         color: #808080
         font-size: 1.3rem
         line-height: 1.95rem
 .form
     &__title
-
+        @include h2
+            @include for-tablet
+                @include h2_tablet
+            @include for-phone-only
+                @include h2_mobile
+            @include for-desktop
+                @include h2
     &__main
         &_checkbox
             &_label
@@ -173,6 +247,7 @@ textarea
     font-family: Golos, sans-serif
     &_title
         font-family: RoadRadio, sans-serif
+        @include h4
     &_number
         font-size: 1.9rem
         line-height: 2.85rem
@@ -183,7 +258,7 @@ textarea
     &_button
         font-size: 1.4rem
         line-height: 1.96rem
-        color: $color-red
+        color: $color-red-links
     &_time
         font-size: 1.4rem
         line-height: 1.96rem
@@ -197,6 +272,16 @@ textarea
         &_left
             &_link
                 font-family: Golos, sans-serif
+                @include text_big
+                    @include for-tablet
+                        font-size: 2rem
+                        line-height: 3.4rem
+                    @include for-phone-only
+                        font-size: 2rem
+                        line-height: 3.4rem
+                    @include for-desktop
+                        font-size: 2.4rem
+                        line-height: 3.36rem
             &_grid
                 color: $color-text-dop
                 font-weight: 400
@@ -209,6 +294,14 @@ textarea
                 &_number
                     font-family: Golos, sans-serif
                     color: white
+                    @include for-phone-only
+                        font-size: 2.3rem
+                        line-height: 3.45rem
+                    @include for-tablet
+                        font-size: 2.3rem
+                        line-height: 3.45rem
+                    @include for-computer
+                        @include h3
                 &_button
                     font-size: 1.4rem
                     line-height: 1.4rem
@@ -217,6 +310,16 @@ textarea
                 font-size: 1.6rem
                 line-height: 2.08rem
                 font-weight: 300
+            &_mail
+                text-transform: lowercase
+                @include for-tablet
+                    font-size: 1.9rem
+                    line-height: 110%
+                @include for-phone-only
+                    font-size: 1.9rem
+                    line-height: 110%
+                @include for-desktop
+                    @include text_big
     &__bottom
         color: $color-text-dop
         font-size: 1.3rem
