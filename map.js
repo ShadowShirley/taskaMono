@@ -56,5 +56,4 @@ ymaps.ready(function () {
         .add(myPlacemark)
         .add(myPlacemark2)
         .add(myPlacemark3)
-
 });
