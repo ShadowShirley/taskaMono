@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Golos';
-  src: url(../../public/font/GolosText-VariableFont_wght.ttf);
+  src: url(../src/public/font/GolosText-VariableFont_wght.ttf) format("ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -533,7 +533,7 @@ textarea::placeholder {
 
 @font-face {
   font-family: 'Golos';
-  src: url(../../public/font/GolosText-VariableFont_wght.ttf);
+  src: url(../src/public/font/GolosText-VariableFont_wght.ttf) format("ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -1009,7 +1009,7 @@ label span:hover {
 
 @font-face {
   font-family: 'Golos';
-  src: url(../../public/font/GolosText-VariableFont_wght.ttf);
+  src: url(../src/public/font/GolosText-VariableFont_wght.ttf) format("ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -2416,7 +2416,7 @@ textarea:focus {
 
 @font-face {
   font-family: 'Golos';
-  src: url(../../public/font/GolosText-VariableFont_wght.ttf);
+  src: url(../src/public/font/GolosText-VariableFont_wght.ttf) format("ttf");
   font-weight: normal;
   font-style: normal;
 }
