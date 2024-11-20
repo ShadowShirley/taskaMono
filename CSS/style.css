@@ -26,6 +26,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'RoadRadioNormal';
+  src: url(../../public/font/RoadRadio.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -89,8 +96,7 @@ label span:hover {
 }
 
 body {
-  font-family: "RoadRadio", sans-serif;
-  font-weight: 400;
+  font-family: "RoadRadioNormal", sans-serif;
   color: #262633;
   font-size: 1.6rem;
 }
@@ -227,8 +233,8 @@ textarea::placeholder {
 }
 
 .info__number_style {
-  font-family: RoadRadio,sans-serif;
-  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 110%;
 }
 
 @media (min-width: 768px) {
@@ -553,6 +559,13 @@ textarea::placeholder {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'RoadRadioNormal';
+  src: url(../../public/font/RoadRadio.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -619,8 +632,8 @@ label span:hover {
   padding: 1.9rem 2.8rem;
   background: #BF2738;
   border-radius: 1.4rem;
-  transition: all .3s;
   height: max-content;
+  font-family: RoadRadioNormal, sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -672,10 +685,8 @@ label span:hover {
   border-radius: 1.4rem;
   height: max-content;
   color: white;
-  font-family: RoadRadio, sans-serif;
   font-size: 1.4rem;
   line-height: 1.4rem;
-  font-weight: 200;
 }
 
 .btn__form:hover {
@@ -1024,6 +1035,13 @@ label span:hover {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'RoadRadioNormal';
+  src: url(../../public/font/RoadRadio.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -1087,8 +1105,7 @@ label span:hover {
 }
 
 body {
-  font-family: "RoadRadio", sans-serif;
-  font-weight: 400;
+  font-family: "RoadRadioNormal", sans-serif;
   color: #262633;
   font-size: 1.6rem;
 }
@@ -1225,8 +1242,8 @@ textarea::placeholder {
 }
 
 .info__number_style {
-  font-family: RoadRadio,sans-serif;
-  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 110%;
 }
 
 @media (min-width: 768px) {
@@ -1574,24 +1591,6 @@ textarea::placeholder {
   .main__map {
     margin-top: 6.6rem;
     margin-bottom: 8.1rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .main__map_setting {
-    height: 480px;
-  }
-}
-
-@media (max-width: 767px) and (min-width: 320px) {
-  .main__map_setting {
-    height: 477px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .main__map_setting {
-    height: 599px;
   }
 }
 
@@ -1972,6 +1971,28 @@ textarea:focus {
   #last {
     grid-row: span 1;
     grid-column: span 1;
+  }
+}
+
+#map {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #map {
+    height: 480px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  #map {
+    height: 477px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #map {
+    height: 599px;
   }
 }
 
@@ -2421,6 +2442,13 @@ textarea:focus {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'RoadRadioNormal';
+  src: url(../../public/font/RoadRadio.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -2484,8 +2512,7 @@ label span:hover {
 }
 
 body {
-  font-family: "RoadRadio", sans-serif;
-  font-weight: 400;
+  font-family: "RoadRadioNormal", sans-serif;
   color: #262633;
   font-size: 1.6rem;
 }
@@ -2622,8 +2649,8 @@ textarea::placeholder {
 }
 
 .info__number_style {
-  font-family: RoadRadio,sans-serif;
-  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 110%;
 }
 
 @media (min-width: 768px) {

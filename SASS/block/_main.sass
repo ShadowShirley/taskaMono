@@ -27,13 +27,6 @@
         @include for-desktop
             margin-top: 6.6rem
             margin-bottom: 8.1rem
-        &_setting
-            @include for-tablet
-                height: 480px
-            @include for-phone-only
-                height: 477px
-            @include for-desktop
-                height: 599px
     &__cards
         margin: 0 31.5rem
         @include for-tablet
@@ -222,3 +215,12 @@ textarea:focus
     @include for-phone-only
         grid-row: span 1
         grid-column: span 1
+
+#map
+    width: 100%
+    @include for-tablet
+        height: 480px
+    @include for-phone-only
+        height: 477px
+    @include for-desktop
+        height: 599px

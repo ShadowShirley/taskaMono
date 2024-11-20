@@ -1,8 +1,7 @@
 @import "base"
 @import "../abstract/variable"
 body
-    font-family: "RoadRadio", sans-serif
-    font-weight: 400
+    font-family: "RoadRadioNormal", sans-serif
     color: $color-text-main
     font-size: 1.6rem
 @mixin h1
@@ -203,8 +202,7 @@ textarea
     font-family: Golos,sans-serif
     white-space: nowrap
     &__number_style
-        font-family: RoadRadio,sans-serif
-        font-weight: 400
+        @include h2
         @include for-tablet
             @include h2_tablet
         @include for-desktop
