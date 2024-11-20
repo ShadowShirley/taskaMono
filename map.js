@@ -55,5 +55,5 @@ ymaps.ready(function () {
     myMap.geoObjects
         .add(myPlacemark)
         .add(myPlacemark2)
-        .add(myPlacemark3)
+        .add(myPlacemark3);
 });
