@@ -36,7 +36,16 @@ body
     line-height: 130%
     font-weight: 500
     @content
-
+h1
+    all: unset
+h2
+    all: unset
+h3
+    all: unset
+h4
+    all: unset
+h5
+    all: unset
 @mixin h3_tablet
     font-size: 2.6rem
     line-height: 130%
@@ -301,7 +310,8 @@ textarea
                         font-size: 2.3rem
                         line-height: 3.45rem
                     @include for-computer
-                        @include h3
+                        font-size: 3rem
+                        line-height: 3.39rem
                 &_button
                     font-size: 1.4rem
                     line-height: 1.4rem

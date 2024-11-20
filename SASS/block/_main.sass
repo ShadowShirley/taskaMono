@@ -12,10 +12,10 @@
             margin: 0 1.6rem
             flex-direction: column
             gap: 5rem
+        @include for-desktop
+            justify-content: space-evenly
         @include for-computer
             margin: 0 31.5rem
-            justify-content: space-between
-        @include for-desktop
             justify-content: space-between
     &__map
         @include for-tablet
@@ -54,6 +54,10 @@
             margin-bottom: 2rem
         @include for-tablet
             margin-bottom: 1.5rem
+        @include for-desktop
+            margin-bottom: 1.5rem
+        &_main
+            margin-bottom: 0.4rem
     @include for-tablet
         white-space: normal
     @include for-phone-only
@@ -73,22 +77,26 @@
         width: fit-content
         padding: 0
     &__title
-        margin-bottom: 2rem
         white-space: nowrap
         @include for-tablet
             margin-bottom: 1rem
         @include for-phone-only
             margin-bottom: 1rem
+        @include for-desktop
+            margin-bottom: 2rem
     &__main
         display: flex
         flex-direction: column
         width: min-content
         @include for-tablet
             width: 100%
+            margin-top: 1rem
         @include for-phone-only
             width: 100%
+            margin-top: 1rem
         @include for-desktop
             width: fit-content
+            margin-top: 2rem
         &_top
             display: flex
             gap: 3rem
@@ -150,12 +158,15 @@
                     height: 13.3rem
                     margin-top: 2.8rem
         &_checkbox
-            display: flex
-            flex-direction: row
             padding-top: 2rem
             padding-bottom: 3.3rem
+            display: flex
+            flex-direction: row
             @include for-tablet
                 padding-bottom: 3rem
+            &_text
+                vertical-align: middle
+
 input:focus
     outline: none
 textarea:focus

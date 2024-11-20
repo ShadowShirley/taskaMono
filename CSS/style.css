@@ -95,6 +95,26 @@ body {
   font-size: 1.6rem;
 }
 
+h1 {
+  all: unset;
+}
+
+h2 {
+  all: unset;
+}
+
+h3 {
+  all: unset;
+}
+
+h4 {
+  all: unset;
+}
+
+h5 {
+  all: unset;
+}
+
 input {
   font-family: Golos, sans-serif;
   font-size: 1.6rem;
@@ -412,8 +432,7 @@ textarea::placeholder {
 @media (min-width: 1920px) {
   .footer__top_right_info_number {
     font-size: 3rem;
-    line-height: 130%;
-    font-weight: 500;
+    line-height: 3.39rem;
   }
 }
 
@@ -648,7 +667,7 @@ label span:hover {
 }
 
 .btn__form {
-  padding: 1.9rem 3.7rem;
+  padding: 1.9rem 3.6rem;
   background: #BF2738;
   border-radius: 1.4rem;
   height: max-content;
@@ -656,7 +675,7 @@ label span:hover {
   font-family: RoadRadio, sans-serif;
   font-size: 1.4rem;
   line-height: 1.4rem;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .btn__form:hover {
@@ -1074,6 +1093,26 @@ body {
   font-size: 1.6rem;
 }
 
+h1 {
+  all: unset;
+}
+
+h2 {
+  all: unset;
+}
+
+h3 {
+  all: unset;
+}
+
+h4 {
+  all: unset;
+}
+
+h5 {
+  all: unset;
+}
+
 input {
   font-family: Golos, sans-serif;
   font-size: 1.6rem;
@@ -1391,8 +1430,7 @@ textarea::placeholder {
 @media (min-width: 1920px) {
   .footer__top_right_info_number {
     font-size: 3rem;
-    line-height: 130%;
-    font-weight: 500;
+    line-height: 3.39rem;
   }
 }
 
@@ -1505,15 +1543,15 @@ textarea::placeholder {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1024px) {
   .main__contact {
-    margin: 0 31.5rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1920px) {
   .main__contact {
+    margin: 0 31.5rem;
     justify-content: space-between;
   }
 }
@@ -1607,6 +1645,16 @@ textarea::placeholder {
   }
 }
 
+@media (min-width: 1024px) {
+  .info__name {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.info__name_main {
+  margin-bottom: 0.4rem;
+}
+
 @media (min-width: 768px) {
   .info {
     white-space: normal;
@@ -1650,7 +1698,6 @@ textarea::placeholder {
 }
 
 .form__title {
-  margin-bottom: 2rem;
   white-space: nowrap;
 }
 
@@ -1666,6 +1713,12 @@ textarea::placeholder {
   }
 }
 
+@media (min-width: 1024px) {
+  .form__title {
+    margin-bottom: 2rem;
+  }
+}
+
 .form__main {
   display: flex;
   flex-direction: column;
@@ -1675,18 +1728,21 @@ textarea::placeholder {
 @media (min-width: 768px) {
   .form__main {
     width: 100%;
+    margin-top: 1rem;
   }
 }
 
 @media (max-width: 767px) and (min-width: 320px) {
   .form__main {
     width: 100%;
+    margin-top: 1rem;
   }
 }
 
 @media (min-width: 1024px) {
   .form__main {
     width: fit-content;
+    margin-top: 2rem;
   }
 }
 
@@ -1806,16 +1862,20 @@ textarea::placeholder {
 }
 
 .form__main_checkbox {
-  display: flex;
-  flex-direction: row;
   padding-top: 2rem;
   padding-bottom: 3.3rem;
+  display: flex;
+  flex-direction: row;
 }
 
 @media (min-width: 768px) {
   .form__main_checkbox {
     padding-bottom: 3rem;
   }
+}
+
+.form__main_checkbox_text {
+  vertical-align: middle;
 }
 
 input:focus {
@@ -2270,6 +2330,12 @@ textarea:focus {
   }
 }
 
+@media (min-width: 1920px) {
+  .left_indentation {
+    margin-left: 31.5rem;
+  }
+}
+
 .right_indentation {
   margin-right: 31.5rem;
   margin-left: 12.7rem;
@@ -2286,6 +2352,12 @@ textarea:focus {
   .right_indentation {
     margin-left: 1.5rem;
     margin-right: 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .right_indentation {
+    margin-left: 12.7rem;
   }
 }
 
@@ -2416,6 +2488,26 @@ body {
   font-weight: 400;
   color: #262633;
   font-size: 1.6rem;
+}
+
+h1 {
+  all: unset;
+}
+
+h2 {
+  all: unset;
+}
+
+h3 {
+  all: unset;
+}
+
+h4 {
+  all: unset;
+}
+
+h5 {
+  all: unset;
 }
 
 input {
@@ -2735,8 +2827,7 @@ textarea::placeholder {
 @media (min-width: 1920px) {
   .footer__top_right_info_number {
     font-size: 3rem;
-    line-height: 130%;
-    font-weight: 500;
+    line-height: 3.39rem;
   }
 }
 

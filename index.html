@@ -34,17 +34,20 @@
           <button class="header__comparison"><img src="/svg/Сравение.svg" alt=""></button>
           <button class="header__search"><img src="/svg/Поиск.svg" alt=""></button>
           <div class="header__info">
-              <p class="header__number">+7 (499) 136-17-18</p>
-              <a class="header__mail">info@monevac.ru</a>
+              <a class="header__number" href="tel:+74991361718">+7 (499) 136-17-18</a>
+              <a class="header__mail"
+                 href="mailto:info@monodigital.ru">
+                  info@monevac.ru
+              </a>
           </div>
           <a class="btn btn_typ">Оставить заявку</a>
       </div>
       <article class="underHeader">
-        <div class="underHeader__link">
+        <div class="underHeader__link" itemscope itemtype="http://schema.org/corporation">
             <div>
-                <a href="#" class="underHeader__link_first">Главная</a>
+                <a href="#" class="underHeader__link_first" itemprop="url">Главная</a>
                 <span>•</span>
-                <a href="#" class="underHeader__link_second">Контакты</a>
+                <a href="#" class="underHeader__link_second" itemprop="name">Контакты</a>
             </div>
         </div>
         <div class="underHeader__main"><h1 class="underHeader__main_style">Контакты</h1></div>
@@ -52,8 +55,8 @@
       <section class="main main__layout">
         <section class="main__contact">
           <div class="info">
-              <h2 class="info__number_style">8 (903) 467 98 51</h2>
-              <div class="info__mail"><a href="" class="info__mail_style">info@monevac.ru</a></div>
+              <a class="info__number_style" href="tel:89034679851">8 (903) 467 98 51</a>
+              <div class="info__mail"><a href="mailto:info@monodigital.ru" class="info__mail_style">info@monevac.ru</a></div>
               <div class="info__name info__name_style">
                   <p class="info__name_main">Полное наименование:</p>
                   <p class="info__name_main">Общество с ограниченной ответственностью «МОНЕВАК»</p>
@@ -116,14 +119,13 @@
                       ></textarea>
                   </div>
                   <div class="form__main_checkbox">
-                      <label class="form__main_checkbox_label">
-                      <input type="checkbox" required >
-                      <span></span>
-                          Я подтверждаю свое согласие
-                          с политикой в отношении
-                          <a href="" class="form__main_checkbox_label_link">
-                              обработки персональных данных
-                          </a>
+                      <label  class="form__main_checkbox_label">
+                      <input type="checkbox" required class="form__main_checkbox_text">
+                        <span></span>Я подтверждаю свое согласие
+                              с политикой в отношении
+                              <a href="" class="form__main_checkbox_label_link">
+                                  обработки персональных данных
+                              </a>
                       </label>
                   </div>
               </form>
@@ -240,7 +242,7 @@
                               Обратный звонок
                           </button>
                       </div>
-                      <a class="text_big footer__top_right_mail">info@monevac.ru</a>
+                      <a class="text_big footer__top_right_mail" href="mailto:info@monodigital.ru">info@monevac.ru</a>
                       <p class="text_big footer__top_right_street">Москва ул. Дербеневская, д. 1, стр. 1,
                           подъезд 44, офис 6</br> (станция метро "Павелецкая")
                       </p>
