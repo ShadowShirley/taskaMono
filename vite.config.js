@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import {viteStaticCopy} from "vite-plugin-static-copy";
 
 export default defineConfig({
     root: 'src', // Укажите корневую папку вашего приложения
@@ -9,5 +10,13 @@ export default defineConfig({
     server: {
         port: 3000, // Порт для локального сервера
     },
-    plugins: [],
+    plugins: [viteStaticCopy({
+        targets: [
+            {
+                src: 'assets/font/*', // Путь к вашим шрифтам или другим статическим файлам
+                dest: 'font', // Директория в dist, куда файлы должны быть скопированы
+            },
+            ],
+        }),
+    ],
 });
