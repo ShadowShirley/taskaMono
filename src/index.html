@@ -99,11 +99,10 @@
                              name="number"
                              required
                              placeholder="Ваш телефон"
-                             pattern=".{11,}"
-                             title="Минимум 11 символов"
-                             minlength="11"
-                             maxlength="12"
-                             class="form__main_top_number">
+
+                             class="form__main_top_number"
+                             id="phone"
+                      >
                   </div>
                   <div class="form__main_bottom">
                       <textarea
@@ -116,12 +115,11 @@
                       ></textarea>
                   </div>
                   <div class="form__main_checkbox">
+                      <input type="checkbox" class="form__main_checkbox_input">
                       <label  class="form__main_checkbox_label">
-                      <input type="checkbox" required class="form__main_checkbox_text">
-                        <span></span>Я подтверждаю свое согласие
-                              с политикой в отношении
+                          Я подтверждаю свое согласие с политикой в отношении&nbsp;
                               <a href="" class="form__main_checkbox_label_link">
-                                  обработки персональных данных
+                                   обработки персональных данных
                               </a>
                       </label>
                   </div>

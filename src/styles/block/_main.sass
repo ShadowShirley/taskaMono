@@ -103,21 +103,7 @@
             @include for-desktop
                 flex-direction: row
                 gap: 3rem
-            &_name
-                background: $color-back-block
-                border: transparent
-                border-radius: 1.4rem
-                padding: 1.7rem 0 1.1rem 2rem
-                @include for-tablet
-                    width: 100%
-                    height: 6rem
-                @include for-phone-only
-                    width: 100%
-                    height: 6rem
-                @include for-desktop
-                    width: 30rem
-                    height: 5.2rem
-            &_number
+            &_name, &_number
                 background: $color-back-block
                 border: transparent
                 border-radius: 1.4rem
@@ -154,11 +140,21 @@
             padding-top: 2rem
             padding-bottom: 3.3rem
             display: flex
-            flex-direction: row
+            align-items: center
             @include for-tablet
                 padding-bottom: 3rem
-            &_text
-                vertical-align: middle
+                align-items: normal
+            &_label
+                padding-left: 1.6rem
+                margin: auto 0
+                width: fit-content
+            &_input
+                border-radius: 0.4rem
+                background: $color-back-block
+                width: 2rem
+                height: 2rem
+
+
 
 input:focus
     outline: none
